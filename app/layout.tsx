@@ -4,6 +4,24 @@ import Footer from '@/components/Footer'
 import Privacy from '@/components/Privacy'
 import Work_with_us from '@/components/Work_with_us'
 import Vacancies from '@/components/Vacancies'
+import Random from '@/components/Random'
+import Navbar from '@/components/Navbar'
+import Social_skills from '@/components/Social_skills'
+import Familiar_card from '@/components/Familiar_card'
+import Self_improvement from '@/components/Self_improvement'
+import FamiliarData from '../components/data';
+
+
+function createCard(content:any){
+  return(
+    <Familiar_card 
+      key={content.key}
+      emoji={content.emoji}
+      head={content.head}
+      text={content.text}
+    />
+  )
+}
 
 export const metadata: Metadata = {
   title: 'Next.js App',
@@ -18,7 +36,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        {/* {children} */}
+        <Navbar />
+        <Random 
+          left='EQ beats IQ'
+          middle='People with high emotional intelligence (EQ) live more fulfilled lives. They tend to be happier and have healthier relationships.'
+          right='They are more successful in their pursuits and make for inspiring leaders. According to science, they earn $29k a year.'
+        />
+        <div className='flex justify-between w-[150%] overflow-x-hidden'> 
+          {FamiliarData.map(createCard)}
+        </div>
+        <Self_improvement />
+        <Random 
+          left='Be the best you with EQ'
+          middle='Not having your own emotions under control might be holding you back.'
+          right='Additionally, not understanding those of others stops you from being parent, friend you can be.'
+        />
+        <Social_skills />
         <Privacy />
         <Work_with_us />
         <Vacancies />
