@@ -8,7 +8,7 @@ interface RandomCardProps {
 
 const Random: React.FC<RandomCardProps> = (props) => {
   return (
-    <div className="w-[70%] p-7 flex justify-between items-start ml-auto mr-auto">
+    <div className="w-[75%] p-7 pt-28 pb-28 flex justify-between items-start ml-auto mr-auto">
       <p className="font-bold text-[24px] w-[20%]">{props.left}</p>
       <p className="font-medium w-[27%] text-[#3b3d3e]">{props.middle}</p>
       <p className="font-medium w-[27%] text-[#3b3d3e]">{props.right}</p>

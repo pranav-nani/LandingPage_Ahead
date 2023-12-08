@@ -34,11 +34,13 @@ const SmallButton = ({ text }: any) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
+
   useEffect(() => {
     if (isInView) {
       mainControls.start("visible");
     }
   }, [isInView]);
+
   return (
     <motion.small
       ref={ref}
@@ -50,9 +52,8 @@ const SmallButton = ({ text }: any) => {
       animate={mainControls}
       transition={{ duration: 1, delay: 0.25, type: "spring", stiffness: 100 }}
       className="font-medium"
-    >
-      {text}
-    </motion.small>
+      dangerouslySetInnerHTML={{ __html: text }}
+    />
   );
 };
 
@@ -89,7 +90,7 @@ const AnimatedComponent = ({
       }}
       initial="hidden"
       animate={mainControls}
-      transition={{ duration: 2, delay, type: "spring", stiffness: 100 }}
+      transition={{ duration: 4, delay, type: "spring", stiffness: 100 }}
       className={`relative ${bottomValue} ${className || ""}`}
     >
       {isSmallFirst ? (
@@ -117,7 +118,7 @@ const AnimatedComponent = ({
 
 const Social_skills = () => {
   return (
-    <div className="w-[80%] bg-[#edf8fe] ml-auto mr-auto p-16 text-center rounded-2xl">
+    <div className="w-[80%] bg-[#edf8fe] ml-auto mr-auto p-16 text-center rounded-2xl mt-32">
       <p className="font-medium text-[18px]">
         Let your friends, family and co-workers (anonymously) rate your social
         skills.

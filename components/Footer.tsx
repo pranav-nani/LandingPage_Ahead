@@ -1,9 +1,29 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const Footer = () => {
+  const ref = useRef(null);
+  const isInview = useInView(ref, { once: true });
+  const mainControls = useAnimation();
+  useEffect(() => {
+    if (isInview) {
+      mainControls.start("visible");
+    }
+  }, [isInview]);
   return (
-    <footer className="flex items-center flex-col p-20">
+    <motion.footer
+      ref={ref}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, scale: [0.5, 1] },
+      }}
+      initial="hidden"
+      animate={mainControls}
+      transition={{ duration: 0.75, delay: 0.25 }}
+      className="flex items-center flex-col p-10 pb-0"
+    >
       <div className="flex items-center flex-col">
         <Image src="/logo.png" alt="logo" width={70} height={10} />
         <p className="font-medium text-[#5832e9] text-[30px]">ahead</p>
@@ -40,7 +60,7 @@ const Footer = () => {
           @ 2022 Ahead app. All rights reserved
         </p>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

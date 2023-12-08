@@ -27,7 +27,7 @@ const Work_with_us = () => {
           animate={mainControls}
           transition={{
             duration: 2,
-            delay: 0.25,
+            delay: 1.5,
             type: "spring",
             stiffness: 100,
           }}
@@ -63,15 +63,15 @@ const Work_with_us = () => {
           animate={mainControls}
           transition={{
             duration: 2,
-            delay: 0.25,
+            delay: 1.5,
             type: "spring",
             stiffness: 100,
           }}
-          className="text-[45px] font-bold pb-5 pt-8 text-[#6643f3] relative"
+          className="text-[45px] font-bold pb-5 pt-8 text-[#6643f3] relative pr-8"
         >
           ahead
         </motion.h1>
-        <div className="relative overflow-y-scroll ms-auto flex flex-col items-end">
+        <div className="relative overflow-y-scroll ms-auto flex flex-col items-end overflow-container pr-5">
           {workData.map((content, index) => (
             <Work_card
               key={index}
