@@ -11,7 +11,7 @@ const Meet = () => {
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
   return (
     <div className="bg-[#fef7f1] w-[70%] ml-auto mr-auto mt-28 p-16 pt-28 pb-28 rounded-2xl overflow-hidden">
       <motion.p

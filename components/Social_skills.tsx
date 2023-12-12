@@ -12,7 +12,7 @@ const CircleButton = ({ text }: any) => {
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
   return (
     <motion.div
       ref={ref}
@@ -39,7 +39,7 @@ const SmallButton = ({ text }: any) => {
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
 
   return (
     <motion.small
@@ -74,7 +74,7 @@ const AnimatedComponent = ({
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
   const bottomValue = isSmallFirst ? "bottom-11" : "bottom-2";
 
   return (

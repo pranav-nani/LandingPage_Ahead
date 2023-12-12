@@ -67,7 +67,7 @@ const Self_improvement = () => {
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
   return (
     <div className="p-16 w-[75%] ml-auto mr-auto mt-28 mb-28">
       <motion.p

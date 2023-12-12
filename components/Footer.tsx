@@ -11,7 +11,7 @@ const Footer = () => {
     if (isInview) {
       mainControls.start("visible");
     }
-  }, [isInview]);
+  }, [isInview, mainControls]);
   return (
     <motion.footer
       ref={ref}

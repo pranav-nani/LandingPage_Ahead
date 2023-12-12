@@ -12,7 +12,7 @@ const AnimatedText = ({ text, delay, className }: any) => {
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
 
   return (
     <motion.p

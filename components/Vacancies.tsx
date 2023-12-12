@@ -12,7 +12,7 @@ const Vacancies = () => {
     if (isInview) {
       mainController.start("visible");
     }
-  }, [isInview]);
+  }, [isInview, mainController]);
   return (
     <div className="w-[70%] ml-auto mr-auto pt-20 pb-20 mt-28">
       <motion.p

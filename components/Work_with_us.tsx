@@ -13,7 +13,7 @@ const Work_with_us = () => {
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
   return (
     <div className="w-[75%] h-[770px] ml-auto mr-auto flex justify-between bg-[#f3f1ff] p-12 rounded-2xl overflow-y-auto">
       <div className="w-[50%]">

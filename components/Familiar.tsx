@@ -25,7 +25,7 @@ const Familiar = () => {
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
   return (
     <div>
       <motion.p
