@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Work_card from "./work_card";
-import { workData } from "@/pages/work_with_us";
+import { workData } from "./data";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const Work_with_us = () => {

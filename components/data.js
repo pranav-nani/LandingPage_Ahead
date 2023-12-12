@@ -3,7 +3,7 @@ const FamiliarData = [
         id: 1,
         num: 1,
         emoji: "😊",
-        bg:"bg-[#ffefd5]",
+        bg: "bg-[#ffefd5]",
         head: "You argue with a colleague",
         text: "You get angry and defensive, instead of staying open and working towards common ground"
     },
@@ -11,7 +11,7 @@ const FamiliarData = [
         id: 2,
         num: 2,
         emoji: "😤",
-        bg:"bg-[#eeebfe]",
+        bg: "bg-[#eeebfe]",
         head: "You argue with a colleague",
         text: "You get angry and defensive, instead of staying open and working towards common ground"
     },
@@ -19,7 +19,7 @@ const FamiliarData = [
         id: 3,
         num: 3,
         emoji: "😳",
-        bg:"bg-[#d8f2ff]",
+        bg: "bg-[#d8f2ff]",
         head: "You argue with a colleague",
         text: "You get angry and defensive, instead of staying open and working towards common ground"
     },
@@ -27,7 +27,7 @@ const FamiliarData = [
         id: 4,
         num: 4,
         emoji: "🫤",
-        bg:"bg-[#59f1d0]",
+        bg: "bg-[#59f1d0]",
         head: "You argue with a colleague",
         text: "You get angry and defensive, instead of staying open and working towards common ground"
     },
@@ -35,7 +35,7 @@ const FamiliarData = [
         id: 5,
         num: 5,
         emoji: "🥹",
-        bg:"bg-[#6341ef]",
+        bg: "bg-[#6341ef]",
         head: "You argue with a colleague",
         text: "You get angry and defensive, instead of staying open and working towards common ground"
     },
@@ -43,7 +43,7 @@ const FamiliarData = [
         id: 6,
         num: 6,
         emoji: "😉",
-        bg:"bg-[#b9f159]",
+        bg: "bg-[#b9f159]",
         head: "You argue with a colleague",
         text: "You get angry and defensive, instead of staying open and working towards common ground"
     }
@@ -77,4 +77,54 @@ const ImprovementData = [
     }
 ]
 
-export { FamiliarData, ImprovementData };
+const vacancyData = [
+    {
+        heading: "Senior Full-Stack Engineer",
+        one: "Full-time position",
+        two: "Berlin or remote",
+        three: "$65-85k, 0.5-1.50% equity share options",
+    },
+    {
+        heading: "Senior Designer",
+        one: "Full-time position",
+        two: "Berlin or remote",
+        three: "$40-55k, 0.5-1.50% equity share options",
+    },
+    {
+        heading: "Superstar Intern",
+        one: "Full-time position",
+        two: "Berlin or remote",
+        three: "$20-24k, 0.5-1.50% equity share options",
+    },
+];
+
+
+const workData = [
+    {
+        heading: 'Power through, even when the going gets tough',
+        text: 'We help you spot and work around whatever stands in the way, be it bad habits, fears, etc.',
+    },
+    {
+        heading: 'Power through, even when the going gets tough',
+        text: 'We help you spot and work around whatever stands in the way, be it bad habits, fears, etc.',
+    },
+    {
+        heading: 'Power through, even when the going gets tough',
+        text: 'We help you spot and work around whatever stands in the way, be it bad habits, fears, etc.',
+    },
+    {
+        heading: 'Power through, even when the going gets tough',
+        text: 'We help you spot and work around whatever stands in the way, be it bad habits, fears, etc.',
+    },
+    {
+        heading: 'Power through, even when the going gets tough',
+        text: 'We help you spot and work around whatever stands in the way, be it bad habits, fears, etc.',
+    },
+    {
+        heading: 'Power through, even when the going gets tough',
+        text: 'We help you spot and work around whatever stands in the way, be it bad habits, fears, etc.',
+    },
+];
+
+
+export { FamiliarData, ImprovementData, vacancyData, workData };

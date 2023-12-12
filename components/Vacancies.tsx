@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useEffect } from "react";
-import { vacancyData } from "@/pages/vacancy";
+import { vacancyData } from "./data";
 import Vacancy_card from "@/components/Vacancy_card";
 import { motion, useAnimation, useInView } from "framer-motion";
 
