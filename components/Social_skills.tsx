@@ -51,7 +51,7 @@ const SmallButton = ({ text }: any) => {
       initial="hidden"
       animate={mainControls}
       transition={{ duration: 1, delay: 0.25, type: "spring", stiffness: 100 }}
-      className="font-medium"
+      className="font-medium leading-none text-[10px] lg:text-[14px]"
       dangerouslySetInnerHTML={{ __html: text }}
     />
   );
@@ -95,7 +95,7 @@ const AnimatedComponent = ({
     >
       {isSmallFirst ? (
         <>
-          <small className={`p-3 text-white ${bgColor || ""} rounded-xl`}>
+          <small className={`p-2 md:p-3 text-white ${bgColor || ""} rounded-xl`}>
             {text}
           </small>
           <div
@@ -107,7 +107,7 @@ const AnimatedComponent = ({
           <div
             className={`w-[15px] h-[15px] rounded-[50%] ${bgColor || ""} mb-3`}
           ></div>
-          <small className={`p-3 text-white ${bgColor || ""} rounded-xl`}>
+          <small className={`p-2 md:p-3 text-white ${bgColor || ""} rounded-xl`}>
             {text}
           </small>
         </>
@@ -118,16 +118,16 @@ const AnimatedComponent = ({
 
 const Social_skills = () => {
   return (
-    <div className="w-[80%] bg-[#edf8fe] ml-auto mr-auto p-16 text-center rounded-2xl mt-32">
-      <p className="font-medium text-[18px]">
+    <div className="w-[80%] bg-[#edf8fe] ml-auto mr-auto p-8 lg:p-16 text-center rounded-2xl mt-32">
+      <p className="font-medium text-[14px] lg:text-[18px]">
         Let your friends, family and co-workers (anonymously) rate your social
         skills.
       </p>
-      <h1 className="text-[45px] font-bold pb-20">
+      <h1 className="text-[20px] md:text-[30px] lg:text-[45px] font-bold pb-20">
         Ever wondered what others think of you?
       </h1>
       <div className="ml-auto mr-auto w-[58%] border-2 border-dashed border-[#e8c079]"></div>
-      <div className="ml-auto mr-auto flex justify-between w-[80%] relative bottom-5">
+      <div className="ml-auto mr-auto flex justify-between w-[100%] lg:w-[80%] relative bottom-5">
         <div>
           <CircleButton text="1" />
           <SmallButton text="Answer questions on your social skills" />
@@ -141,9 +141,9 @@ const Social_skills = () => {
           <SmallButton text="Find out where you and others see things <br/> the same way - and where not!" />
         </div>
       </div>
-      <div className="ml-auto mr-auto w-[55%] h-[200px] bg-white rounded-xl flex flex-col justify-center pt-10 mt-14 mb-4 shadow-lg shadow-gray-500/50">
+      <div className="ml-auto mr-auto w-[100%] text-xs md:text-[16px] lg:w-[55%] h-[200px] bg-white rounded-xl flex flex-col justify-center pt-10 mt-14 mb-4 shadow-lg shadow-gray-500/50">
         <div className="ml-auto mr-auto w-[88%] border-2 border-solid border-gray"></div>
-        <div className="flex justify-between ml-auto mr-auto w-[90%]">
+        <div className="flex justify-between ml-auto mr-auto w-[100%] lg:w-[90%]">
           <AnimatedComponent
             text="You"
             delay={0.5}
@@ -155,7 +155,7 @@ const Social_skills = () => {
             isSmallFirst={true}
           />
           <AnimatedComponent
-            text="Anonymonos 1"
+            text="Anonymous 1"
             delay={0.65}
             className=""
             initialLeft="20%"
@@ -165,7 +165,7 @@ const Social_skills = () => {
             isSmallFirst={false}
           />
           <AnimatedComponent
-            text="Anonymonos 2"
+            text="Anonymous 2"
             delay={0.8}
             className=""
             initialLeft="25%"
@@ -175,7 +175,7 @@ const Social_skills = () => {
             isSmallFirst={true}
           />
           <AnimatedComponent
-            text="Anonymonos 3"
+            text="Anonymous 3"
             delay={0.95}
             className=""
             initialLeft="30%"

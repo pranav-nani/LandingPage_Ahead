@@ -13,7 +13,7 @@ const Meet = () => {
     }
   }, [isInView, mainControls]);
   return (
-    <div className="bg-[#fef7f1] w-[70%] ml-auto mr-auto mt-28 p-16 pt-28 pb-28 rounded-2xl overflow-hidden">
+    <div className="bg-[#fef7f1] w-[95%] lg:w-[70%] ml-auto mr-auto mt-28 p-16 pt-28 pb-28 rounded-2xl overflow-hidden">
       <motion.p
         ref={ref}
         variants={{
@@ -26,19 +26,19 @@ const Meet = () => {
           duration: 1,
           delay: 0.25,
         }}
-        className="text-[50px] font-bold pb-10 relative"
+        className="text-[25px] md:text-[50px] font-bold pb-10 relative"
       >
         <span className="block text-[18px] font-medium">
           Built out of frustation
         </span>
         Meet the ahead app
       </motion.p>
-      <div className="flex justify-between items-center">
-        <div className="w-[45%] relative">
+      <div className="flex flex-col lg:flex-row justify-between lg:items-center">
+        <div className="w-[60%] lg:w-[50%] relative">
           <motion.div
             ref={ref}
             variants={{
-              hidden: { opacity: 0, right: 25 },
+              hidden: { opacity: 0, right: -25 },
               visible: { opacity: 1, right: 50, bottom: [0, -5, 0] },
             }}
             initial="hidden"
@@ -110,7 +110,20 @@ const Meet = () => {
             className="w-[275px] h-[275px] rounded-full absolute bg-[#fae8dc] left-[-150px] bottom-[-100px] z-10"
           ></motion.div>
         </div>
-        <div className="w-[45%] font-medium">
+        <motion.div
+          ref={ref}
+          variants={{
+            hidden: { opacity: 0, scale: 0.95 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{
+            duration: 1,
+            delay: 0.25,
+          }}
+          className="w-[95%] md:w-[85%] lg:w-[45%] z-20 ml-auto mr-auto pt-5 lg:pt-0 font-medium"
+        >
           <p>
             A personalized pocket coach that provides bite-sized, science-deiven
             tools to boost emotional intelligence.
@@ -120,7 +133,7 @@ const Meet = () => {
             Think of it as a pocket cheerleader towards a better, more
             fulfilling.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -55,7 +55,7 @@ const Familiar = () => {
         transition={{ duration: 1.5, delay: 0.25 }}
         className=" relative"
       >
-        <div className="flex justify-between w-[150%]">
+        <div className="flex gap-14 w-[150%] flex-wrap">
           {FamiliarData.map(createCard)}
         </div>
       </motion.div>

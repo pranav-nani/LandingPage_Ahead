@@ -28,7 +28,7 @@ const Footer = () => {
         <Image src="/logo.png" alt="logo" width={70} height={10} />
         <p className="font-medium text-[#5832e9] text-[30px]">ahead</p>
       </div>
-      <div className="flex w-[25%] justify-between pt-8">
+      <div className="md:flex w-[25%] justify-between pt-8">
         <span className="flex items-center">
           <span className="p-3 bg-[#9ef1d9] absolute rounded-[50%]"></span>
           <Image

@@ -33,7 +33,7 @@ const AnimatedText = ({ text, delay, className }: any) => {
 
 const Privacy = () => {
   return (
-    <div className="flex flex-col items-center w-[50%] ml-auto mr-auto pt-20 pb-20 relative mt-28 mb-28">
+    <div className="flex flex-col items-center w-[95%] md:w-[50%] ml-auto mr-auto pt-20 pb-20 relative mt-28 mb-28">
       <AnimatedText
         text="We take privacy seriously"
         delay={0.25}

@@ -14,7 +14,7 @@ const Vacancies = () => {
     }
   }, [isInview, mainController]);
   return (
-    <div className="w-[70%] ml-auto mr-auto pt-20 pb-20 mt-28">
+    <div className="w-[90%] lg:w-[70%] ml-auto mr-auto pt-20 pb-20 mt-28">
       <motion.p
         ref={ref}
         variants={{
@@ -34,7 +34,7 @@ const Vacancies = () => {
       >
         Open vacanies
       </motion.p>
-      <div className="flex justify-between">
+      <div className="flex flex-wrap gap-5 justify-center md:justify-between">
         {vacancyData.map((content, index) => (
           <Vacancy_card
             key={index}

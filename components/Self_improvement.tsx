@@ -22,7 +22,7 @@ const Template: React.FC<ImprovementProps> = (props) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 0.8", "1 0.5"],
+    offset: ["0 0.9", "1 0.5"],
   });
   const y = useTransform(scrollYProgress, [0, 0.9, 1.25], [1, 1.05, 1]);
   const z = useTransform(scrollYProgress, [0, 0.9, 1.25], [1, 1.5, 1]);
@@ -69,7 +69,7 @@ const Self_improvement = () => {
     }
   }, [isInView, mainControls]);
   return (
-    <div className="p-16 w-[75%] ml-auto mr-auto mt-28 mb-28">
+    <div className="p-6 md:p-16 w-[95%] lg:w-[75%] ml-auto mr-auto mt-28 mb-28">
       <motion.p
         ref={ref}
         variants={{
@@ -82,16 +82,16 @@ const Self_improvement = () => {
           duration: 1.5,
           delay: 0.25,
         }}
-        className="text-[50px] font-bold pb-10 relative"
+        className="text-[30px] md:text-[50px] font-bold pb-10 relative"
       >
-        <span className="block text-[18px] font-medium">
+        <span className="block text-[14px] md:text-[18px] font-medium">
           Wrong with self-improvement & how we are fixing it
         </span>
         Self-improvement. Ugh.
       </motion.p>
       <div className="flex justify-center">
         <div className="bg-[#7559f1] w-[2px] mr-3"></div>
-        <div className="flex flex-col w-[55%]">
+        <div className="flex flex-col md:w-[75%] lg:w-[55%]">
           {ImprovementData.map(createCard)}
         </div>
       </div>

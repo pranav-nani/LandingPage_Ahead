@@ -15,8 +15,8 @@ const Work_with_us = () => {
     }
   }, [isInView, mainControls]);
   return (
-    <div className="w-[75%] h-[770px] ml-auto mr-auto flex justify-between bg-[#f3f1ff] p-12 rounded-2xl overflow-y-auto">
-      <div className="w-[50%]">
+    <div className="w-[85%] lg:w-[75%] h-[770px] ml-auto mr-auto flex flex-col lg:flex-row justify-between bg-[#f3f1ff] p-12 rounded-2xl overflow-auto overflow-container">
+      <div className="w-[100%] lg:w-[50%]">
         <motion.h1
           ref={ref}
           variants={{
@@ -31,7 +31,7 @@ const Work_with_us = () => {
             type: "spring",
             stiffness: 100,
           }}
-          className="text-[45px] font-bold pb-5 pt-8 relative"
+          className="text-[30px] lg:text-[45px] font-bold pb-5 pt-8 relative"
         >
           Work with us
         </motion.h1>
@@ -67,11 +67,11 @@ const Work_with_us = () => {
             type: "spring",
             stiffness: 100,
           }}
-          className="text-[45px] font-bold pb-5 pt-8 text-[#6643f3] relative pr-8"
+          className="text-[30px] lg:text-[45px] font-bold pb-5 pt-8 text-[#6643f3] relative pr-8"
         >
           ahead
         </motion.h1>
-        <div className="relative overflow-y-scroll ms-auto flex flex-col items-end overflow-container pr-5">
+        <div className="relative overflow-y-scroll ms-auto flex flex-wrap justify-between lg:flex-col lg:flex-nowrap items-end overflow-container pr-5">
           {workData.map((content, index) => (
             <Work_card
               key={index}
