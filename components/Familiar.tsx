@@ -32,7 +32,7 @@ const Familiar = () => {
         ref={ref}
         variants={{
           hidden: { opacity: 0, right: 150 },
-          visible: { opacity: 1, left: 200 },
+          visible: { opacity: 1, left: 75 },
         }}
         initial="hidden"
         animate={mainControls}
@@ -40,7 +40,7 @@ const Familiar = () => {
           duration: 1.5,
           delay: 0.25,
         }}
-        className="text-[50px] font-bold pb-10 relative"
+        className="text-[25px] lg:text-[50px] font-bold pb-10 relative"
       >
         Does this sound familiar...
       </motion.p>
@@ -48,14 +48,14 @@ const Familiar = () => {
         ref={ref}
         variants={{
           hidden: { opacity: 0, left: 1000 },
-          visible: { opacity: 1, left: [500, -150] },
+          visible: { opacity: 1, left: [500, 50] },
         }}
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 1.5, delay: 0.25 }}
         className=" relative"
       >
-        <div className="flex gap-14 w-[150%] flex-wrap">
+        <div className="flex gap-14 w-[250%] flex-wrap">
           {FamiliarData.map(createCard)}
         </div>
       </motion.div>

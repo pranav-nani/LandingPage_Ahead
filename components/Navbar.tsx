@@ -11,7 +11,7 @@ const Navbar = () => {
         width={50}
         height={10}
       />
-      <div className="w-auto ml-[15%] flex item-center">
+      <div className="w-auto ml-[15%] flex item-center invisible xl:visible">
         <div className="flex items-center">
           <p className="pl-6 pr-6 font-medium">Emotions</p>
           <p className="pl-6 pr-6 font-medium">Manifesto</p>
@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
         <button
           type="button"
-          className="text-white bg-black focus:outline-none focus:ring-4 font-bold rounded-full text-sm px-5 py-4 text-center"
+          className="text-white bg-black focus:outline-none focus:ring-4 font-bold rounded-full text-sm px-5 py-4 text-center ml-24"
         >
           Download App
         </button>

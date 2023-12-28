@@ -10,6 +10,7 @@ import Social_skills from "@/components/Social_skills";
 import Self_improvement from "@/components/Self_improvement";
 import Familiar from "@/components/Familiar";
 import Meet from "@/components/Meet";
+import Master from "@/components/Master";
 
 export const metadata: Metadata = {
   title: "Next.js App",
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body>
         {/* {children} */}
         <Navbar />
+        <Master />
         <Random
           left="EQ beats IQ"
           middle="People with high emotional intelligence (EQ) live more fulfilled lives. They tend to be happier and have healthier relationships."
