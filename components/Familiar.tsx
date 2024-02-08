@@ -32,7 +32,7 @@ const Familiar = () => {
         ref={ref}
         variants={{
           hidden: { opacity: 0, right: 150 },
-          visible: { opacity: 1, left: 75 },
+          visible: { opacity: 1, left: 50 },
         }}
         initial="hidden"
         animate={mainControls}
@@ -55,7 +55,7 @@ const Familiar = () => {
         transition={{ duration: 1.5, delay: 0.25 }}
         className=" relative"
       >
-        <div className="flex gap-14 w-[250%] flex-wrap">
+        <div className="overflow-hidden w-[100%] grid gap-14 md:grid-flow-col md:grid-rows-2 lg:grid-rows-1">
           {FamiliarData.map(createCard)}
         </div>
       </motion.div>

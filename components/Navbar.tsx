@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center pt-5">
+    <div className="flex w-[100%] overflow-hidden items-center pt-5">
       <Image
         className="ml-[15%]"
         src="/logo.png"
@@ -11,7 +11,7 @@ const Navbar = () => {
         width={50}
         height={10}
       />
-      <div className="w-auto ml-[15%] flex item-center invisible xl:visible">
+      <div className="w-auto ml-[15%] flex item-center invisible lg:visible">
         <div className="flex items-center">
           <p className="pl-6 pr-6 font-medium">Emotions</p>
           <p className="pl-6 pr-6 font-medium">Manifesto</p>
