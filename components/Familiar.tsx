@@ -32,7 +32,7 @@ const Familiar = () => {
         ref={ref}
         variants={{
           hidden: { opacity: 0, right: 150 },
-          visible: { opacity: 1, left: 50 },
+          visible: { opacity: 1, left: 250 },
         }}
         initial="hidden"
         animate={mainControls}
