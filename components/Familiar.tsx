@@ -47,7 +47,7 @@ const Familiar = () => {
       <motion.div
         ref={ref}
         variants={{
-          hidden: { opacity: 0, left: 1000 },
+          hidden: { opacity: 0, left: 1023 },
           visible: { opacity: 1, left: [500, 50] },
         }}
         initial="hidden"
